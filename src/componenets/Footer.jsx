@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-
+import Navbar from "./Navbar";
 
 
 const Footer = () => {
@@ -17,7 +17,10 @@ const Footer = () => {
   };
  
     return (
-      <div className="footer">
+      <div>
+    <Navbar />
+
+      <div id="hire-me" className="footer">
         <div className="footer-section">
          
           <h1 className="footer-title">
@@ -37,7 +40,7 @@ const Footer = () => {
             <button className="footer-btn" onClick={handleLinkedInClick}>Linkedin</button>
           </div>
           </div>
-       
+       </div>
       </div>
     );
   };
