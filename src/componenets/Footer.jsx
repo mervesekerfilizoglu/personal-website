@@ -1,7 +1,21 @@
 import React from "react";
 import "./footer.css";
 
+
+
 const Footer = () => {
+
+  const handleGitHubClick = () => {
+    window.location.href = 'https://github.com/mervesekerfilizoglu'; // github'a yönlendiriyor
+  };
+  const handleLinkedInClick = () => {
+    window.location.href = 'https://www.linkedin.com/in/merve-%C5%9Feker-filizo%C4%9Flu-7aa911127/'; // linkedIn'e yönlendiriyor
+  };
+
+  const handleHireMeClick = () => {
+    window.location.href = 'https://mail.google.com/mail/u/0/#inbox'; // Gmail'e yönlendiriyor
+  };
+ 
     return (
       <div className="footer">
         <div className="footer-section">
@@ -11,13 +25,16 @@ const Footer = () => {
           </div>
           <div className="email-others-links">
           <div className="footer-email-links">
-          <a className="footer-email-btn" href="#">sekermer33@gmail.com</a>
+          <button className="footer-email-btn" onClick={handleHireMeClick}>sekermer33@gmail.com</button>
+          
           </div>
   
           <div className="footer-links">
-            <a className="footer-btn" href="#">Personal Blog</a>
-            <a className="footer-btn" href="#">Github</a>
-            <a className="footer-btn" href="#">Linkedin</a>
+          <button className="footer-btn">Personal Blog</button>
+
+            <button className="footer-btn" onClick={handleGitHubClick}>Github</button>
+
+            <button className="footer-btn" onClick={handleLinkedInClick}>Linkedin</button>
           </div>
           </div>
        

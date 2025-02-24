@@ -1,6 +1,12 @@
 import React from "react";
 import "./projects.css";
 const Projects = () => {
+
+  const handleGitHubClick = () => {
+    window.location.href = 'https://github.com/mervesekerfilizoglu'; // github'a yönlendiriyor
+  };
+
+
   return (
     <div className='projects'>
       <h2 className="projects-title">Projects</h2>
@@ -25,7 +31,7 @@ const Projects = () => {
 
 
           <div className="witflix-links">
-            <a className="btn " href="#">GitHub</a>
+          <button className="btn" onClick={handleGitHubClick}>Github</button>
             <a className="btn" href="#">View Site</a>
           </div>
         </div>
@@ -49,7 +55,7 @@ const Projects = () => {
 
 
           <div className="pizza-links">
-            <a className="btn " href="#">GitHub</a>
+          <button className="btn" onClick={handleGitHubClick}>Github</button>
             <a className="btn" href="#">View Site</a>
           </div>
         </div>
@@ -72,7 +78,7 @@ const Projects = () => {
 
 
           <div className="banking-links">
-            <a className="btn" href="#">GitHub</a>
+          <button className="btn" onClick={handleGitHubClick}>Github</button>
             <a className="btn" href="#">View Site</a>
           </div>
         </div>

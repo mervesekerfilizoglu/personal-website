@@ -2,6 +2,15 @@ import React from "react";
 import "./introduce.css";
 
 const Introduce = () => {
+  const handleGitHubClick = () => {
+    window.location.href = 'https://github.com/mervesekerfilizoglu'; // github'a yönlendiriyor
+  };
+  const handleLinkedInClick = () => {
+    window.location.href = 'https://www.linkedin.com/in/merve-%C5%9Feker-filizo%C4%9Flu-7aa911127/'; // linkedIn'e yönlendiriyor
+  };
+  const handleHireMeClick = () => {
+    window.location.href = 'https://mail.google.com/mail/u/0/#inbox'; // Gmail'e yönlendiriyor
+  };
   return (
     <div className="introduce">
       <div className="introduce-section">
@@ -20,9 +29,10 @@ const Introduce = () => {
         </p>
 
         <div className="introduce-links">
-          <a className="introduce-btn introduce-btn-primary" href="#">Hire me</a>
-          <a className="introduce-btn" href="#">Github</a>
-          <a className="introduce-btn" href="#">Linkedin</a>
+        <button className="introduce-btn introduce-btn-primary" onClick={handleHireMeClick}>Hire me</button>
+            <button className="introduce-btn" onClick={handleGitHubClick}>Github</button>
+            <button className="introduce-btn" onClick={handleLinkedInClick}>Linkedin</button>
+          
         </div>
       </div>
       <div className="introduce-image">
