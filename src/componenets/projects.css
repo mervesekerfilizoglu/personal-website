@@ -1,0 +1,103 @@
+.projects {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Resimler arasına boşluk ekle */
+    flex-wrap: wrap; /* Ekrana sığmadığında bir sonraki satıra geçsin */
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .projects-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 40px; /* Başlık ile projeler arasına boşluk ekle */
+  }
+  
+  .projects-witflix,
+  .projects-pizza,
+  .projects-banking {
+    display: flex;
+    flex-direction: column; /* Resim ve başlıkları dikey sıraya diz */
+    align-items: center; /* İçeriği ortala */
+    gap: 10px; /* Resim ve başlık arasına boşluk ekle */
+    width: 100%; /* Projeler genişliğini ekrana göre ayarlayacak */
+    max-width: 300px; /* Maksimum genişlik, resimler eşit boyutta olacak */
+  }
+  
+  img {
+    width: 100%; /* Resimleri ekrana sığacak şekilde duyarlı yap */
+    max-width: auto; /* Maksimum resim genişliği */
+    height: auto; /* Yüksekliği otomatik olarak ayarla */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .projects-witflix h4,
+  .projects-pizza h4,
+  .projects-banking h4 {
+    color: #3730A3;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0; /* Başlık ile butonlar arasındaki boşluğu kaldır */
+  }
+  
+  .projects-witflix .witflix-links,
+  .projects-pizza .pizza-links,
+  .projects-banking .banking-links {
+    display: flex;
+    gap: 1rem; /* Butonlar arasına boşluk bırak */
+    justify-content: center; /* Bağlantıları ortala */
+    margin-top: 10px; /* Başlık ve butonlar arasında boşluk ekle */
+  }
+  
+  .btn {
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: #3730A3;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #3730A3;
+    color: white;
+  }
+  
+  .projects-bottom-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 30px;
+  }
+  .witflix-info ul  {
+    display: flex; /* Liste öğelerini yan yana sıralar */
+    gap: 1rem; /* Elemanlar arasına boşluk ekler */
+    padding: 0; /* Varsayılan padding'i kaldırır */
+    list-style-type: none; /* Liste işaretlerini kaldırır */
+    
+
+  }
+  .pizza-info ul  {
+    display: flex; /* Liste öğelerini yan yana sıralar */
+    gap: 1rem; /* Elemanlar arasına boşluk ekler */
+    padding: 0; /* Varsayılan padding'i kaldırır */
+    list-style-type: none; /* Liste işaretlerini kaldırır */
+  }
+  .banking-info ul  {
+    display: flex; /* Liste öğelerini yan yana sıralar */
+    gap: 1rem; /* Elemanlar arasına boşluk ekler */
+    padding: 0; /* Varsayılan padding'i kaldırır */
+    list-style-type: none; /* Liste işaretlerini kaldırır */
+  }
+  .witflix-info li,
+.pizza-info li,
+.banking-info li {
+    border: 2px solid #3730A3; /* Pizza için çerçeve */
+    border-radius: 8px; /* Kenarlarda yuvarlatılmış köşeler */
+}

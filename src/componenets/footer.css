@@ -1,0 +1,61 @@
+.footer {
+    display: flex;
+    flex-direction: column; /* Tüm öğeleri dikeyde sıralar */
+  
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column; /* Başlık ve e-posta linki dikey sıralansın */
+  
+    gap: 10px; /* Başlık ile e-posta arasına boşluk ekler */
+  }
+  
+  .email-others-links {
+    display: flex;
+    flex-direction: row; /* İçindeki öğeleri yatayda sıralar */
+  
+   
+    width: 100%; /* Tüm genişliği kapsar */
+  }
+  
+ 
+  .footer-links {
+    display: flex;
+    justify-content: center; /* İçeriği yatayda ortalar */
+    gap: 1rem; /* Bağlantılar arasına boşluk ekler */
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto; /* Footer'ı sayfa altına yerleştirir */
+  }
+  
+
+ 
+  .footer-btn {
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: #3730A3;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-btn:hover {
+    background-color: #3730A3;
+    color: white;
+  }
+  
+  .footer-email-links a {
+    text-decoration: none;
+    color: #3730A3;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-email-links a:hover {
+    background-color: #3730A3;
+    color: white;
+  }
+  
