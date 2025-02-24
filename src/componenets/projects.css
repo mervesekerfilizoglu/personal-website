@@ -101,3 +101,48 @@
     border: 2px solid #3730A3; /* Pizza için çerçeve */
     border-radius: 8px; /* Kenarlarda yuvarlatılmış köşeler */
 }
+
+/* Mobil uyumlu düzenlemeler */
+@media screen and (max-width: 768px) {
+  .projects {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .projects-witflix,
+  .projects-pizza,
+  .projects-banking {
+      max-width: 100%;
+  }
+
+  .projects-title {
+      font-size: 24px;
+  }
+
+  .btn {
+      width: 100%;
+      text-align: center;
+  }
+
+  img {
+      width: 100%;
+      height: auto;
+  }
+
+  .projects-bottom-line {
+      margin-top: 20px;
+  }
+
+  .projects-witflix h4,
+  .projects-pizza h4,
+  .projects-banking h4 {
+      font-size: 16px;
+  }
+
+  .witflix-info ul,
+  .pizza-info ul,
+  .banking-info ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+}

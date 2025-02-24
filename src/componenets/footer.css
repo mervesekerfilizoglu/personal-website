@@ -59,3 +59,31 @@
     color: white;
   }
   
+
+  /* Mobil uyumlu düzenlemeler */
+@media screen and (max-width: 768px) {
+  .footer {
+      padding: 20px;
+  }
+
+  .footer-section {
+      align-items: center;
+      text-align: center;
+  }
+
+  .email-others-links {
+      flex-direction: column; /* Mobilde dikey sıralama */
+      align-items: center;
+  }
+
+  .footer-links {
+      flex-direction: column; /* Mobilde dikey sıralama */
+      gap: 10px;
+  }
+
+  .footer-btn, .footer-email-links a {
+      width: 100%; /* Butonlar ve linkler tam genişlikte */
+      text-align: center;
+      padding: 12px;
+  }
+}

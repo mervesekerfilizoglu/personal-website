@@ -81,3 +81,45 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
 }
+
+
+
+/* Mobil uyumlu düzenlemeler */
+@media screen and (max-width: 768px) {
+    .introduce {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .introduce-section {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .introduce-title {
+        font-size: 32px;
+    }
+
+    .introduce-description {
+        font-size: 14px;
+    }
+
+    .introduce-links {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .introduce-btn, .introduce-btn-primary {
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .introduce-image img {
+        width: 100%;
+        max-width: 350px; /* Mobilde daha küçük görünsün */
+    }
+}

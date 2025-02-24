@@ -42,3 +42,30 @@
 html {
     scroll-behavior: smooth;
   }
+
+  /* Mobil uyumlu düzenlemeler */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-name {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar-link-item {
+        padding: 8px 12px;
+        width: 100%;
+        text-align: left;
+    }
+}
