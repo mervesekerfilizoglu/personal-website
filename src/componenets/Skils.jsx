@@ -1,9 +1,12 @@
 import React from 'react';
 import "./skils.css";
+import Navbar from "./Navbar";
 
 const Skils = () => {
   return (
-    <div className='skils'>
+    <div>
+    <Navbar />
+    <div id="skills"className='skils'>
       <h2 className="skils-title">Skills</h2>
       <div className="skils-container">
         <div className="skils-container-item">
@@ -20,6 +23,7 @@ const Skils = () => {
         </div>
       </div>
       <div className="skils-bottom-line"></div>
+    </div>
     </div>
   )
 }

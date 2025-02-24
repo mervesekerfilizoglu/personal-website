@@ -1,5 +1,7 @@
 import React from "react";
 import "./projects.css";
+import Navbar from "./Navbar";
+
 const Projects = () => {
 
   const handleGitHubClick = () => {
@@ -8,7 +10,10 @@ const Projects = () => {
 
 
   return (
-    <div className='projects'>
+    <div>
+    <Navbar />
+
+    <div  id="projects" className='projects'>
       <h2 className="projects-title">Projects</h2>
       <div className="projects-container">
         <div className="projects-witflix">
@@ -85,6 +90,7 @@ const Projects = () => {
 
       </div>
       <div className="profile-bottom-line"></div>
+    </div>
     </div>
   );
 };

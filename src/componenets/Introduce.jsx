@@ -1,5 +1,6 @@
 import React from "react";
 import "./introduce.css";
+import Navbar from "./Navbar";
 
 const Introduce = () => {
   const handleGitHubClick = () => {
@@ -12,7 +13,10 @@ const Introduce = () => {
     window.location.href = 'https://mail.google.com/mail/u/0/#inbox'; // Gmail'e yönlendiriyor
   };
   return (
-    <div className="introduce">
+    <div>
+    <Navbar />
+
+    <div id="hire-me" className="introduce">
       <div className="introduce-section">
         <div className="introduce-name">
           <span className="introduce-line"></span>
@@ -41,7 +45,7 @@ const Introduce = () => {
           alt="Profile"
         />
       </div>
-      
+      </div>
     </div>
   );
 };
