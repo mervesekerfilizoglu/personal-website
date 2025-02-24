@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+.dark {
+    background-color: #474646;
+    color: #f3f3ff;
+} 
+
+
 .navbar-name {
     background-color: #eeebff;
     width: 35px;
@@ -38,12 +44,13 @@
     color: #3730A3;
     background: #f3f3ff;
 }
+
 /* Yumuşak kaydırma efekti */
 html {
     scroll-behavior: smooth;
-  }
+}
 
-  /* Mobil uyumlu düzenlemeler */
+/* Mobil uyumlu düzenlemeler */
 @media screen and (max-width: 768px) {
     .navbar {
         padding: 15px;
