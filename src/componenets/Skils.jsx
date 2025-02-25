@@ -1,13 +1,22 @@
 import React from 'react';
 import "./skils.css";
-import Navbar from "./Navbar";
+
+import { useContext } from "react";
+import { ContextLanguage } from "../context/LanguageContexts";
 
 const Skils = () => {
+  const {dilDegistir, content}=useContext(ContextLanguage)
+     const changeLanguage=()=>
+      {
+        dilDegistir("tr")
+      }
+
+
   return (
     <div>
-    <Navbar />
-    <div id="skills"className='skils'>
-      <h2 className="skils-title">Skills</h2>
+ 
+    <div className='skils'>
+      <h2 className="skils-title">{content.skills}</h2>
       <div className="skils-container">
         <div className="skils-container-item">
             <h4>Java Script</h4>

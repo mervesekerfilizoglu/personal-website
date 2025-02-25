@@ -1,9 +1,19 @@
 import React from "react";
 import "./footer.css";
- import Navbar from "./Navbar"; 
+ 
+ import { useContext } from "react";
+import { ContextLanguage } from "../context/LanguageContexts";
 
 
 const Footer = () => {
+  const {dilDegistir, content}=useContext(ContextLanguage)
+       const changeLanguage=()=>
+        {
+          dilDegistir("tr")
+        }
+  
+
+
 
   const handleGitHubClick = () => {
     window.location.href = 'https://github.com/mervesekerfilizoglu'; // github'a yönlendiriyor
@@ -18,13 +28,13 @@ const Footer = () => {
  
     return (
       <div>
-    <Navbar />
+   
 
-      <div id="hire-me" className="footer">
+      <div  className="footer">
         <div className="footer-section">
          
           <h1 className="footer-title">
-          Let’s work together on your next product. </h1>
+          {content.footerTitle} </h1>
           </div>
           <div className="email-others-links">
           <div className="footer-email-links">
@@ -33,11 +43,11 @@ const Footer = () => {
           </div>
   
           <div className="footer-links">
-          <button className="footer-btn">Personal Blog</button>
+          <button className="footer-btn"> {content.personalBlog}</button>
 
-            <button className="footer-btn" onClick={handleGitHubClick}>Github</button>
+            <button className="footer-btn" onClick={handleGitHubClick}> {content.github}</button>
 
-            <button className="footer-btn" onClick={handleLinkedInClick}>Linkedin</button>
+            <button className="footer-btn" onClick={handleLinkedInClick}> {content.linkedin}</button>
           </div>
           </div>
        </div>

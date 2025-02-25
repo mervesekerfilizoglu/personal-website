@@ -1,31 +1,38 @@
 import React from 'react';
 import "./profile.css";
+import { useContext } from "react";
+import { ContextLanguage } from "../context/LanguageContexts";
 
 const Profile = () => {
+  const {dilDegistir, content}=useContext(ContextLanguage)
+     const changeLanguage=()=>
+      {
+        dilDegistir("tr")
+      }
+
+      
   return (
     <div className='profile'>
-      <h2 className="profile-title">Profile</h2>
+      <h2 className="profile-title">{content.profile}</h2>
       <div className="profile-container">
         <div className="profile-info">
-          <h4>Profile</h4>
+          <h4>{content.profile}</h4>
           <ul>
-            <li><strong>Date of birth:</strong> 14.04.1995</li>
-            <li><strong>City of Residence:</strong> İzmir</li>
-            <li><strong>Educational Status:</strong>Masters degree: Ege Ünv. Biomedical Technologies USA. Bachelor's degree: Afyon Kocatepe Ünv. Biomedical Engineering</li>
-            <li><strong>Masters degree,</strong> 2018</li>
-            <li><strong>Preferred Role:</strong> Frontend, UI</li>
+            <li><strong>{content.dateOfBirth}</strong> 14.04.1995</li>
+            <li><strong>{content.cityOfResidence}</strong> İzmir</li>
+            <li><strong>{content.educationalStatus}</strong>{content.educationalStatus2}</li>
+            <li><strong>{content.degree}</strong> 2018</li>
+            <li><strong>{content.preferredRole}</strong> Frontend, UI</li>
           </ul>
         </div>
 
         <div className="profile-about">
-          <h4>About Me</h4>
+          <h4>{content.aboutMe}</h4>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, 
-            odit laborum aliquam voluptatum nisi mollitia.
+          {content.aboutMe1} 
           </p>
           <p>
-            Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt 
-            quam temporibus cumque magnam!
+          {content.aboutMe2} 
           </p>
         </div>
       </div>

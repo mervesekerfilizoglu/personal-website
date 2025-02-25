@@ -1,8 +1,18 @@
 import React from "react";
 import "./projects.css";
-import Navbar from "./Navbar";
+
+import { useContext } from "react";
+import { ContextLanguage } from "../context/LanguageContexts";
 
 const Projects = () => {
+  const {dilDegistir, content}=useContext(ContextLanguage)
+       const changeLanguage=()=>
+        {
+          dilDegistir("tr")
+        }
+  
+
+
 
   const handleGitHubClick = () => {
     window.location.href = 'https://github.com/mervesekerfilizoglu'; // github'a yönlendiriyor
@@ -11,10 +21,10 @@ const Projects = () => {
 
   return (
     <div>
-    <Navbar />
+    
 
-    <div  id="projects" className='projects'>
-      <h2 className="projects-title">Projects</h2>
+    <div  className='projects'>
+      <h2 className="projects-title">{content.projects}</h2>
       <div className="projects-container">
         <div className="projects-witflix">
 
@@ -23,7 +33,7 @@ const Projects = () => {
             alt="Witflix"
           />
           <h4>Witflix</h4>
-          <p4>Developed a sleek and responsive movie streaming web application that allows users to browse, search, and discover movies with a modern, Netflix-inspired UI.</p4>
+          <p4>{content.witflix}</p4>
 
           <div className="witflix-info">
             <ul>
@@ -36,8 +46,8 @@ const Projects = () => {
 
 
           <div className="witflix-links">
-          <button className="btn" onClick={handleGitHubClick}>Github</button>
-            <a className="btn" href="#">View Site</a>
+          <button className="btn" onClick={handleGitHubClick}>{content.github}</button>
+            <a className="btn" href="#">{content.viewSite}</a>
           </div>
         </div>
 
@@ -47,7 +57,7 @@ const Projects = () => {
             alt="Pizza"
           />
           <h4>Pizza</h4>
-          <p4>Designed and developed a modern pizza ordering web application with a seamless user experience. The app allows users to browse a menu, customize their orders, and streamline the checkout process.</p4>
+          <p4>{content.pizza}</p4>
 
           <div className="pizza-info">
             <ul>
@@ -60,8 +70,8 @@ const Projects = () => {
 
 
           <div className="pizza-links">
-          <button className="btn" onClick={handleGitHubClick}>Github</button>
-            <a className="btn" href="#">View Site</a>
+          <button className="btn" onClick={handleGitHubClick}>{content.github}</button>
+            <a className="btn" href="#">{content.viewSite}</a>
           </div>
         </div>
         <div className="projects-banking">
@@ -69,8 +79,8 @@ const Projects = () => {
             src="src\assets\banking.png"
             alt="Banking"
           />
-          <h4>Banking</h4>
-          <p4>A functional and easy-to-use web application was developed that allows users to control multiple bank accounts through a single application with a modern and functional user interface.</p4>
+          <h4>{content.banking}</h4>
+          <p4>{content.banking1}</p4>
           <div className="banking-info">
             <ul>
               <li>react</li>
@@ -83,8 +93,8 @@ const Projects = () => {
 
 
           <div className="banking-links">
-          <button className="btn" onClick={handleGitHubClick}>Github</button>
-            <a className="btn" href="#">View Site</a>
+          <button className="btn" onClick={handleGitHubClick}>{content.github}</button>
+            <a className="btn" href="#">{content.viewSite}</a>
           </div>
         </div>
 
