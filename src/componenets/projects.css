@@ -53,6 +53,7 @@
     gap: 1rem; /* Butonlar arasına boşluk bırak */
     justify-content: center; /* Bağlantıları ortala */
     margin-top: 10px; /* Başlık ve butonlar arasında boşluk ekle */
+    
   }
   
   .btn {
@@ -62,6 +63,9 @@
     color: #3730A3;
     font-weight: 500;
     transition: all 0.3s ease;
+    border: none;
+    outline: none;
+    background-color: white;
   }
   
   .btn:hover {
