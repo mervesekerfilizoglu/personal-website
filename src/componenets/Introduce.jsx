@@ -46,7 +46,7 @@ const Introduce = () => {
       </div>
       <div className="introduce-image">
         <img
-          src="public\img\klt.jpg"
+          src="/img/klt.jpg"
           alt="Profile"
         />
       </div>

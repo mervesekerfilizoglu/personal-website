@@ -29,7 +29,7 @@ const Projects = () => {
         <div className="projects-witflix">
 
           <img
-            src="public\img\witflix.png"
+            src="/img/witflix.png"
             alt="Witflix"
           />
           <h4>Witflix</h4>
@@ -53,7 +53,7 @@ const Projects = () => {
 
         <div className="projects-pizza">
           <img
-            src="public\img\pizza.png"
+            src="/img/pizza.png"
             alt="Pizza"
           />
           <h4>Pizza</h4>
