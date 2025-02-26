@@ -76,7 +76,7 @@ const Projects = () => {
         </div>
         <div className="projects-banking">
           <img
-            src="public\img\banking.png"
+            src="/img/banking.png"
             alt="Banking"
           />
           <h4>{content.banking}</h4>
