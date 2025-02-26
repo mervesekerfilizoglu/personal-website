@@ -15,7 +15,7 @@ const Skils = () => {
   return (
     <div>
  
-    <div className='skils'>
+    <div id="skills" className='skils'>
       <h2 className="skils-title">{content.skills}</h2>
       <div className="skils-container">
         <div className="skils-container-item">

@@ -23,7 +23,7 @@ const Projects = () => {
     <div>
     
 
-    <div  className='projects'>
+    <div id="projects" className='projects'>
       <h2 className="projects-title">{content.projects}</h2>
       <div className="projects-container">
         <div className="projects-witflix">
