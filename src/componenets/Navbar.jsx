@@ -10,7 +10,7 @@ const Navbar = () => {
   
   const changeLanguage=()=>
   {
-    dilDegistir('tr')
+    dilDegistir((prev) => (prev === "en" ? "tr" : "en"))
   }
 
   return (
@@ -24,7 +24,7 @@ const Navbar = () => {
           Theme
         </button> 
         <button onClick={changeLanguage}>
-  Türkçe'ye Geç
+  Tr/Eng
 </button>
       </div>
     </div>

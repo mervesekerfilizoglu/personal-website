@@ -29,11 +29,9 @@ const Profile = () => {
         <div className="profile-about">
           <h4>{content.aboutMe}</h4>
           <p>
-          {content.aboutMe1} 
+          {content.goals} 
           </p>
-          <p>
-          {content.aboutMe2} 
-          </p>
+          
         </div>
       </div>
       <div className="profile-bottom-line"></div>

@@ -17,8 +17,7 @@
        "preferredRole":"Preferred Role:",
        "degree":"Masters degree,",
        "aboutMe":"About Me",
-       "aboutMe1":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
-       "aboutMe2":"Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt  quam temporibus cumque magnam!",
+      
        "projects":"Projects",
        "witflix":"Developed a sleek and responsive movie streaming web application that allows users to browse, search, and discover movies with a modern, Netflix-inspired UI.",
        "viewSite":"View Site",
@@ -26,7 +25,8 @@
 "banking":"Banking",
 "banking1":"A functional and easy-to-use web application was developed that allows users to control multiple bank accounts through a single application with a modern and functional user interface.",
 "footerTitle":"Let’s work together on your next product.",
-"personalBlog":"Personal Blog"
+"personalBlog":"Personal Blog",
+"goals":"My goals: To work in a well-established and large company in the field of software technologies and to improve myself. To provide services that are in line with the goals, strategies and demands of my company and customers and to produce analytical solutions. At this point, to grow and progress with a company that follows technological and strategic developments in the sector."
     },
 
     "tr":{
@@ -47,8 +47,7 @@
         "preferredRole":"Tercih Edilen Rol:",
         "degree":"Yüksek Lisans,",
         "aboutMe":"Hakkımda",
-        "aboutMe1":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
-        "aboutMe2":"Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+       
         "projects":"Projeler",
         "witflix":"Kullanıcıların Netflix'ten ilham alan modern bir kullanıcı arayüzüyle filmlere göz atmalarına, arama yapmalarına ve keşfetmelerine olanak tanıyan şık ve duyarlı bir film akışı web uygulaması geliştirildi.",
  "viewSite":"Siteyi Görüntüle",
@@ -56,7 +55,8 @@
     "banking":"Banka",
     "banking1":"Kullanıcıların birden fazla banka hesabını tek bir uygulama üzerinden, modern ve işlevsel bir kullanıcı arayüzü ile kontrol edebilmelerine olanak tanıyan, işlevsel ve kullanımı kolay bir web uygulaması geliştirildi.",
     "footerTitle":"Bir sonraki ürününüz üzerinde birlikte çalışalım.",
-"personalBlog":"Kişisel Blog"
+"personalBlog":"Kişisel Blog",
+"goals":"Hedeflerim:Yazılım teknolojileri alanında köklü ve büyük bir firmada çalışarak kendimi geliştirerek ilerlemek. Firmam ve müşterilerin hedef, strateji ve isteklerine uygun hizmeti vererek, analitik çözümler üretmek. Bu noktada da sektördeki teknolojik ve stratejik gelişmelerin takipçisi olan bir firma ile büyümek, ilerlemek."
 
 
 }
