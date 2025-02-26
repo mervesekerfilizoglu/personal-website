@@ -3,6 +3,7 @@ import "./introduce.css";
 import { useContext } from "react";
 import { ContextLanguage } from "../context/LanguageContexts";
 
+
 const Introduce = () => {
 
    const {dilDegistir, content}=useContext(ContextLanguage)
@@ -45,7 +46,7 @@ const Introduce = () => {
       </div>
       <div className="introduce-image">
         <img
-          src="src\assets\img\klt.jpg"
+          src="public\img\klt.jpg"
           alt="Profile"
         />
       </div>
